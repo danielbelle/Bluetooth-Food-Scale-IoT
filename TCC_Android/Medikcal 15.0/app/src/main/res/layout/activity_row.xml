@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#fff"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:contentPadding="5dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/showAlimentoRow"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Frango com Catupiry "
+            android:textColor="#FF9500"
+            android:textStyle="bold"
+            android:textSize="21sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/showKcalRow"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="1dp"
+                android:digits="6"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:minLines="1"
+                android:text="0.0"
+                android:textColor="#FF9500"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textoNormalKcal"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="kcal/100g"
+                android:textColor="#113C44"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/showProtRow"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:text="0.0"
+                android:textColor="#FF9500"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textoNormalProt"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="Prot/100g"
+                android:textColor="#113C44"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/showCarbRow"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:text="0.0"
+                android:textColor="#FF9500"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textoNormalCarb"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="Carb/100g"
+                android:textColor="#113C44"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/showGordRow"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:text="0.0"
+                android:textColor="#FF9500"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textoNormalGord"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="Gord/100g"
+                android:textColor="#113C44"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

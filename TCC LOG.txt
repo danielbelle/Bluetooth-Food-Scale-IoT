@@ -1,0 +1,9 @@
+TCC1.0 – 26/09/2018
+TCC2.0 - 27/09/2018
+TCC3.0 - 29/09/2018
+TCC4.0 - 01/10/2018 - Firebase
+TCC5.0 - 02/10/2018 - Nova activity, nova tentativa de conexão firebase
+TCC6.0 - 04/10/2018 - salva no firebase
+TCC7.0 - 04/10/2018 - 95% WORKING
+TCC8.0 - 06/10/2018 - Falta só a barra search
+TCC9.0 - 10/10/2018 - Terminado o código android.

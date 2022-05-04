@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/textLogo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fredoka_one"
+            android:text="Medi"
+            android:textAppearance="@android:style/TextAppearance.WindowTitle"
+            android:textColor="#22c37E"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/textLogo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fredoka_one"
+            android:text="kcal"
+            android:textAppearance="@android:style/TextAppearance.WindowTitle"
+            android:textColor="#FFA500"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <com.github.lzyzsd.circleprogress.ArcProgress
+        android:id="@+id/arc_progress"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="0dp"
+        android:background="#F9F9F9"
+        app:arc_angle="300"
+        app:arc_bottom_text="gramas"
+        app:arc_bottom_text_size="18sp"
+        app:arc_finished_color="#22C37E"
+        app:arc_max="10000"
+        app:arc_progress="@string/valor_pesado"
+        app:arc_stroke_width="7dp"
+        app:arc_suffix_text=" "
+        app:arc_suffix_text_padding="12dp"
+        app:arc_text_color="#FFFFA500"
+        app:arc_text_size="40dp"
+        app:arc_unfinished_color="#4BFFA500"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:id="@+id/textNomeAlimento"
+                android:layout_gravity="center"
+                android:textColor="#113C44"
+                android:textSize="22sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frango com Catupiry "
+                android:fontFamily="@font/montserrat"
+                />
+
+            <TextView
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:id="@+id/textKcalNum"
+                android:layout_gravity="center"
+                android:textColor="@color/colorTextView"
+                android:textSize="27sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5250"
+                android:fontFamily="@font/montserrat"
+                />
+
+
+            <TextView
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:id="@+id/textKcal"
+                android:layout_gravity="center"
+                android:textColor="@color/colorTextView"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kcal"
+                android:fontFamily="@font/montserrat"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:id="@+id/textProt"
+                android:textColor="@color/colorTextView"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Proteínas"
+                android:fontFamily="@font/montserrat"
+                />
+
+
+            <TextView
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="2dp"
+                android:id="@+id/textCarb"
+                android:textColor="@color/colorTextView"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Carboidratos"
+                android:fontFamily="@font/montserrat"
+                />
+
+
+            <TextView
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="2dp"
+                android:id="@+id/textGord"
+                android:textColor="@color/colorTextView"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Gorduras"
+                android:fontFamily="@font/montserrat"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bgitem"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="7dp"
+                    android:src="@mipmap/imgbluetooth" />
+
+                <TextView
+                    android:id="@+id/textItemOneOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/fredoka_one"
+                    android:text="Novo"
+                    android:textColor="@color/colorTextView"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textItemOneTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/fredoka_one"
+                    android:text="Alimento"
+                    android:textColor="@color/colorTextView"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bgitem"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="7dp"
+                    android:src="@mipmap/imgbluetooth" />
+
+                <TextView
+                    android:id="@+id/textItemTwoOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/fredoka_one"
+                    android:text="Ligar"
+                    android:textColor="@color/colorTextView"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textItemTwoTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/fredoka_one"
+                    android:text="Bluetooth"
+                    android:textColor="@color/colorTextView"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bgitem"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="7dp"
+                    android:src="@mipmap/imgbluetooth" />
+
+                <TextView
+                    android:id="@+id/textItemThreeOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/fredoka_one"
+                    android:text="Fazer"
+                    android:textColor="@color/colorTextView"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textItemThreeTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/fredoka_one"
+                    android:text="Log In"
+                    android:textColor="@color/colorTextView"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/textButtonAddNaDieta"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/bgbtn"
+        android:fontFamily="@font/fredoka_one"
+        android:paddingBottom="5dp"
+        android:text="Salvar na Dieta"
+        android:textColor="#FFF"
+        android:textSize="19sp" />
+
+
+    <Button
+        android:id="@+id/textButtonTare"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/bgbtn"
+        android:fontFamily="@font/fredoka_one"
+        android:paddingBottom="5dp"
+        android:text="Zerar Balança"
+        android:textColor="#FFF"
+        android:textSize="19sp" />
+
+
+</LinearLayout>

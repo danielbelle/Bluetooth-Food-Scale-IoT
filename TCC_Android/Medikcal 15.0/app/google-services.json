@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "806685966241",
+    "firebase_url": "https://medikal-apk2018.firebaseio.com",
+    "project_id": "medikal-apk2018",
+    "storage_bucket": "medikal-apk2018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806685966241:android:e1ec21999abbb539",
+        "android_client_info": {
+          "package_name": "com.example.danie.medikcal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806685966241-e4v5899asub47sah0mfusr4e6kg1vv8j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.danie.medikcal",
+            "certificate_hash": "c694dc290c692aefcac1f8efdbca99287d72125c"
+          }
+        },
+        {
+          "client_id": "806685966241-8om98t157hrb03ffie2oisd855ofd955.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBt3pYx95HdbUPWSkPeBqm2OtvOuNI4jpk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806685966241-8om98t157hrb03ffie2oisd855ofd955.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/bgmedikcal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textLogo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fredoka_one"
+                android:text="Medi"
+                android:textAppearance="@android:style/TextAppearance.WindowTitle"
+                android:textColor="#22c37E"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/textLogo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fredoka_one"
+                android:text="kcal"
+                android:textAppearance="@android:style/TextAppearance.WindowTitle"
+                android:textColor="#FFA500"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btnGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp">
+
+    </com.google.android.gms.common.SignInButton>
+
+
+    <Button
+        android:id="@+id/btnSignOut"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bgmedikcal"
+        android:text="Sign Out"
+        android:textAllCaps="false"
+        android:textColor="#F0696969"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtUserIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Você ainda não está Logado"
+        android:textColor="#113C44"
+        android:textSize="14sp" />
+
+</LinearLayout>
